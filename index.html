@@ -3,13 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lycanworks</title>
-    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="./styles.css">
+    <title>Lycanworks | VRChat 3D Artwork Portfolio</title>
+    <meta name="description" content="Showcasing VRChat-ready 3D avatars and worlds by Lycanworks. Explore the gallery, learn about the tools, and get in touch for commissions.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lycanworks | VRChat 3D Artwork Portfolio">
+    <meta property="og:description" content="Showcasing VRChat-ready 3D avatars and worlds by Lycanworks. Explore the gallery, learn about the tools, and get in touch for commissions.">
+    <meta property="og:url" content="https://lycanworks.example.com/">
+    <meta property="og:image" content="/assets/img/placeholder.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lycanworks | VRChat 3D Artwork Portfolio">
+    <meta name="twitter:description" content="Showcasing VRChat-ready 3D avatars and worlds by Lycanworks. Explore the gallery, learn about the tools, and get in touch for commissions.">
+    <meta name="twitter:image" content="/assets/img/placeholder.webp">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" integrity="sha384-+VG2AunGY0DQb00d/d/9nObFTRnouANTw45GvwFzEsZ9G0KX6ixkmKuuNHYsYkA2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js" integrity="sha384-3+i3zsmnCXld4O+U7wY1yatoNZpCRcVstTLc/4RtXpCUoHRBs1iuE2MsqrS9XqeR" crossorigin="anonymous"></script>
+    <!--
+        Example model-viewer usage:
+        <model-viewer src="/assets/models/sample.glb" poster="/assets/img/sample-thumb.webp" camera-controls loading="eager" alt="Sample 3D model preview"></model-viewer>
+    -->
 </head>
-<body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="app"></div>
-    <script src="./main.js" defer></script>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <h1>Lycanworks</h1>
+        <p>VRChat 3D Artwork</p>
+    </header>
+    <main id="main">
+        <section aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">Gallery</h2>
+            <div class="grid">
+                <figure>
+                    <img src="/assets/img/placeholder.webp" alt="Placeholder showcase of a VRChat avatar" loading="lazy">
+                    <figcaption>
+                        <strong>Lunar Vanguard</strong><br>
+                        Lead Avatar Sculpt
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="/assets/img/placeholder.webp" alt="Placeholder render of a VRChat world" loading="lazy">
+                    <figcaption>
+                        <strong>Neon Promenade</strong><br>
+                        Environment Design
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="/assets/img/placeholder.webp" alt="Placeholder illustration of a creature companion" loading="lazy">
+                    <figcaption>
+                        <strong>Spirit Companion</strong><br>
+                        Companion Rigging
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="/assets/img/placeholder.webp" alt="Placeholder illustration of a VRChat weapon" loading="lazy">
+                    <figcaption>
+                        <strong>Echo Blade</strong><br>
+                        Prop Fabrication
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="/assets/img/placeholder.webp" alt="Placeholder render of a VRChat lounge" loading="lazy">
+                    <figcaption>
+                        <strong>Starlit Lounge</strong><br>
+                        Lighting &amp; FX
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="/assets/img/placeholder.webp" alt="Placeholder illustration of an avatar detail" loading="lazy">
+                    <figcaption>
+                        <strong>Glyph Armor</strong><br>
+                        Texture Artistry
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">About</h2>
+            <p>
+                Lycanworks crafts bespoke VRChat experiences with a toolkit spanning Blender, Substance 3D, and Unity. Commissions are welcome—expect collaborative planning, polished optimization, and a friendly process from concept to upload.
+            </p>
+        </section>
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+            <p>Discord: <span aria-label="Discord handle">@LycanworksVR</span></p>
+            <p>X (Twitter): <span aria-label="X handle">@Lycanworks3D</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>© Lycanworks</p>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
 </body>
 </html>
