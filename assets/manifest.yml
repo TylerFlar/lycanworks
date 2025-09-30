@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=./schema/assets-manifest.schema.json
+---
+items:
+  - id: hero-wolf-pack-dusk
+    type: image
+    files:
+      image: assets/img/hero-wolf-pack-dusk.webp
+      thumb: assets/img/thumb-wolf-pack-dusk.webp
+    features:
+      - wolf
+      - dusk
+      - hero
+      - pack
+    alt: "Three wolves howl on a cliff at dusk, side view."
+    width: 1920
+    height: 1080
+    created: 2025-07-18
+
+  - id: poster-wolf-pack-path
+    type: image
+    files:
+      image: assets/img/poster-wolf-pack-path.webp
+      thumb: assets/img/thumb-wolf-pack-path.webp
+    features:
+      - wolf
+      - poster
+      - trail
+    alt: "Poster of wolves along a forest path, front view."
+    width: 1600
+    height: 2000
+    created: 2025-07-21
+
+  - id: habitat-observatory-night
+    type: image
+    files:
+      image: assets/img/habitat-observatory-night.webp
+      thumb: assets/img/thumb-habitat-observatory-night.webp
+    features:
+      - observatory
+      - night
+      - concept
+    alt: "Observatory dome under aurora, angled overhead view."
+    width: 1720
+    height: 1290
+    created: 2025-08-04
+
+  - id: ui-sigil-engraving
+    type: image
+    files:
+      image: assets/img/ui-sigil-engraving.webp
+      thumb: assets/img/thumb-ui-sigil-engraving.webp
+    features:
+      - sigil
+      - ui
+      - texture
+    alt: "Engraved sigil on steel plate, macro top view."
+    width: 1440
+    height: 960
+    created: 2025-08-22
+
+  - id: loop-wolf-trail-sign
+    type: gif
+    files:
+      gif: assets/gif/loop-wolf-trail-sign.gif
+      poster: assets/gif/poster-wolf-trail-sign.webp
+      thumb: assets/gif/thumb-wolf-trail-sign.webp
+    features:
+      - trail-sign
+      - snow
+      - loop
+    alt: "Trail sign flickers while snow blows toward camera."
+    width: 960
+    height: 540
+    created: 2025-07-30
+
+  - id: motion-fenrir-howl
+    type: gif
+    files:
+      gif: assets/gif/motion-fenrir-howl.gif
+      poster: assets/gif/poster-motion-fenrir-howl.webp
+      thumb: assets/gif/thumb-motion-fenrir-howl.webp
+    features:
+      - fenrir
+      - howl
+      - animation
+      - hero
+    alt: "Fenrir statue glows as head rises to howl, side view."
+    width: 1280
+    height: 720
+    created: 2025-09-02
