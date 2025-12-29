@@ -1,98 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lycanworks | VRChat 3D Artwork Portfolio</title>
-    <meta name="description" content="Showcasing VRChat-ready 3D avatars and worlds by Lycanworks. Explore the gallery, learn about the tools, and get in touch for commissions.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Lycanworks | VRChat 3D Artwork Portfolio">
-    <meta property="og:description" content="Showcasing VRChat-ready 3D avatars and worlds by Lycanworks. Explore the gallery, learn about the tools, and get in touch for commissions.">
-    <meta property="og:url" content="https://lycanworks.example.com/">
-    <meta property="og:image" content="/assets/img/placeholder.webp">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lycanworks | VRChat 3D Artwork Portfolio">
-    <meta name="twitter:description" content="Showcasing VRChat-ready 3D avatars and worlds by Lycanworks. Explore the gallery, learn about the tools, and get in touch for commissions.">
-    <meta name="twitter:image" content="/assets/img/placeholder.webp">
-    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" integrity="sha384-+VG2AunGY0DQb00d/d/9nObFTRnouANTw45GvwFzEsZ9G0KX6ixkmKuuNHYsYkA2" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles.css">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js" integrity="sha384-3+i3zsmnCXld4O+U7wY1yatoNZpCRcVstTLc/4RtXpCUoHRBs1iuE2MsqrS9XqeR" crossorigin="anonymous"></script>
-    <!--
-        Example model-viewer usage:
-        <model-viewer src="/assets/models/sample.glb" poster="/assets/img/sample-thumb.webp" camera-controls loading="eager" alt="Sample 3D model preview"></model-viewer>
-    -->
+    <meta name="description" content="Lycanworks - Custom 2D artwork and 3D avatar commissions">
+    <title>Lycanworks | Commissions</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body id="top">
-    <a class="skip-link" href="#main">Skip to main content</a>
-    <header>
-        <h1>Lycanworks</h1>
-        <p>VRChat 3D Artwork</p>
-    </header>
-    <main id="main">
-        <section aria-labelledby="gallery-heading">
-            <h2 id="gallery-heading">Gallery</h2>
-            <div class="grid">
-                <figure>
-                    <img src="/assets/img/placeholder.webp" alt="Placeholder showcase of a VRChat avatar" loading="lazy">
-                    <figcaption>
-                        <strong>Lunar Vanguard</strong><br>
-                        Lead Avatar Sculpt
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="/assets/img/placeholder.webp" alt="Placeholder render of a VRChat world" loading="lazy">
-                    <figcaption>
-                        <strong>Neon Promenade</strong><br>
-                        Environment Design
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="/assets/img/placeholder.webp" alt="Placeholder illustration of a creature companion" loading="lazy">
-                    <figcaption>
-                        <strong>Spirit Companion</strong><br>
-                        Companion Rigging
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="/assets/img/placeholder.webp" alt="Placeholder illustration of a VRChat weapon" loading="lazy">
-                    <figcaption>
-                        <strong>Echo Blade</strong><br>
-                        Prop Fabrication
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="/assets/img/placeholder.webp" alt="Placeholder render of a VRChat lounge" loading="lazy">
-                    <figcaption>
-                        <strong>Starlit Lounge</strong><br>
-                        Lighting &amp; FX
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="/assets/img/placeholder.webp" alt="Placeholder illustration of an avatar detail" loading="lazy">
-                    <figcaption>
-                        <strong>Glyph Armor</strong><br>
-                        Texture Artistry
-                    </figcaption>
-                </figure>
+<body>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <img src="img/logo.png" alt="Lycanworks logo" class="logo">
+                <h1>Lycanworks</h1>
+                <p class="tagline">2D Art & 3D Avatar Commissions</p>
+                <a href="#contact" class="primary-button">Get in Touch</a>
+            </div>
+            <div class="hero-decoration"></div>
+        </section>
+
+        <section id="commissions-2d" class="page-section">
+            <div class="container"> 
+                <h2>2D Commissions</h2>
+                <p class="price-note">Flats / Rendered pricing</p>
+
+                <div class="commission-type">
+                    <h3>Portrait <span class="price">$40 / $70</span></h3>
+                    <div class="gallery">
+                        <img src="img/2d-portrait-1.jpg" alt="Portrait example">
+                    </div>
+                </div>
+
+                <div class="commission-type">
+                    <h3>Half Body <span class="price">$60 / $100</span></h3>
+                    <div class="gallery">
+                        <img src="img/2d-half-body-1.jpg" alt="Half body example">
+                    </div>
+                </div>
+
+                <div class="commission-type">
+                    <h3>Full Body <span class="price">$80 / $130</span></h3>
+                    <div class="gallery">
+                        <img src="img/2d-full-body-1.jpg" alt="Full body example">
+                    </div>
+                </div>
+
+                <!-- Refsheet & 3D Avatars - Coming Soon
+                <div class="commission-type">
+                    <h3>Refsheet <span class="price">$150</span></h3>
+                    <div class="gallery">
+                        <img src="img/2d-refsheet-1.jpg" alt="Refsheet example">
+                        <img src="img/2d-refsheet-2.jpg" alt="Refsheet example">
+                    </div>
+                </div>
+                -->
+
+                <div class="commission-type">
+                    <p class="coming-soon">Refsheets & 3D Avatars coming soon!</p>
+                </div>
             </div>
         </section>
-        <section aria-labelledby="about-heading">
-            <h2 id="about-heading">About</h2>
-            <p>
-                Lycanworks crafts bespoke VRChat experiences with a toolkit spanning Blender, Substance 3D, and Unity. Commissions are welcome—expect collaborative planning, polished optimization, and a friendly process from concept to upload.
-            </p>
+
+        <!--
+        <section id="commissions-3d" class="page-section page-section--alt">
+            <div class="container">
+                <h2>3D Avatars</h2>
+                <p class="section-intro"><strong>Starting at $1000+</strong><br>VRChat-ready with full visemes</p>
+
+                <div class="gallery gallery--large">
+                    <img src="img/3d-avatar-1.jpg" alt="3D avatar example">
+                    <img src="img/3d-avatar-2.jpg" alt="3D avatar example">
+                    <img src="img/3d-avatar-3.jpg" alt="3D avatar example">
+                </div>
+            </div>
         </section>
-        <section aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Contact</h2>
-            <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
-            <p>Discord: <span aria-label="Discord handle">@LycanworksVR</span></p>
-            <p>X (Twitter): <span aria-label="X handle">@Lycanworks3D</span></p>
+        -->
+
+        <section id="tos" class="page-section">
+            <div class="container">
+                <h2>Terms of Service</h2>
+
+                <div class="tos-grid">
+                    <details class="tos-item">
+                        <summary>Will & Won't Create</summary>
+                        <div class="tos-content">
+                            <h4>I Will Create</h4>
+                            <ul>
+                                <li>Original characters (OCs)</li>
+                                <li>Fanart</li>
+                                <li>Anthro / Furry</li>
+                                <li>Feral characters</li>
+                                <li>Mild gore / blood</li>
+                                <li>Couples / multiple characters (additional charges apply)</li>
+                                <li>NSFW (at my discretion, additional charges apply)</li>
+                            </ul>
+                            <h4>I Won't Create</h4>
+                            <ul>
+                                <li>Hateful or discriminatory content</li>
+                                <li>Real people without their consent</li>
+                                <li>Anything illegal</li>
+                                <li>Complex mechanical designs (mecha, vehicles, etc.)</li>
+                            </ul>
+                            <p><em>If unsure, just ask!</em></p>
+                        </div>
+                    </details>
+
+                    <details class="tos-item">
+                        <summary>Payment</summary>
+                        <div class="tos-content">
+                            <ul>
+                                <li>Work on the commission will only begin when full payment is received in $USD. For commissions exceeding $500, a 50% before/50% after agreement may be made at my discretion—this must be mutually agreed upon before payment.</li>
+                                <li>Tips are appreciated but do not alter the service provided nor my obligation to you.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="tos-item">
+                        <summary>Process & Delivery</summary>
+                        <div class="tos-content">
+                            <ul>
+                                <li>Work-in-progress (WIP) images will be sent at various stages. You may request reasonable changes—what's 'reasonable' depends on the commission scope and work completed. Major changes may incur additional charges at my discretion.</li>
+                                <li>After sending a WIP, I am not obligated to wait for a response before continuing.</li>
+                                <li>An approximate delivery time will be provided, but this is not a binding deadline. You'll be notified of significant delays. Delays will not exceed 60 days—if exceeded, you're entitled to a full refund.</li>
+                                <li>Upon completion you'll receive: full resolution PNG, a web-friendly copy (under 10MB), and a square headshot for profile use. No physical product, but you may print for personal use.</li>
+                            </ul>
+                            <h4>Alterations</h4>
+                            <ul>
+                                <li>I will execute the commission to the best of my ability. If you provide references, I may make minor artistic alterations to improve quality. Major design changes will be discussed first.</li>
+                                <li>Edit requests after final delivery will likely be charged unless trivial (under 5 minutes).</li>
+                                <li>I am under no obligation to provide further alterations or service after the final product is delivered.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="tos-item">
+                        <summary>Copyright & Usage</summary>
+                        <div class="tos-content">
+                            <h4>The Artist (Tyler Flar)</h4>
+                            <ul>
+                                <li>Retains all copyright over the commissioned artwork</li>
+                                <li>Does not claim ownership of your intellectual property (IP)</li>
+                                <li>Will not profit further from the artwork or your IP</li>
+                                <li>Reserves the right to post artwork online for marketing and gallery display</li>
+                            </ul>
+                            <h4>The Customer (You)</h4>
+                            <ul>
+                                <li>May upload and display the artwork online in any capacity</li>
+                                <li>May <strong>not</strong> profit from the artwork unless commercial use is agreed upon</li>
+                                <li>Retain the rights to your IP</li>
+                                <li>May <strong>not</strong> alter the artwork except cropping (signature/credit must remain visible)</li>
+                                <li>May <strong>not</strong> claim the artwork as your own creation</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="tos-item">
+                        <summary>Cancellations & Refunds</summary>
+                        <div class="tos-content">
+                            <ul>
+                                <li>Refunds are available only at my discretion and may be refused for any reason.</li>
+                                <li>If I am unable to complete your commission, you will receive a full refund.</li>
+                                <li>Refunds will be paid directly—do not use PayPal chargeback.</li>
+                                <li>If you request a PayPal chargeback, I will assume full rights to the art and IP and may profit from both with no credit to you. The chargeback will be disputed.</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section page-section--alt">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-grid">
+                    <a href="https://discord.com" class="contact-card">
+                        <span class="contact-label">Discord</span>
+                        <span class="contact-value">tulikko</span>
+                    </a>
+                    <a href="https://instagram.com/lycanworks_art" class="contact-card">
+                        <span class="contact-label">Instagram</span>
+                        <span class="contact-value">@lycanworks_art</span>
+                    </a>
+                    <a href="mailto:tulikkovulps@gmail.com" class="contact-card">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">tulikkovulps@gmail.com</span>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>© Lycanworks</p>
-        <p><a href="#top">Back to top</a></p>
+        <div class="container">
+            <p>© 2025 Lycanworks</p>
+            <p class="footer-note">Do not use or repost without permission.</p>
+        </div>
     </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">✕</span>
+        <img src="" alt="Full size image">
+    </div>
+
+    <script>
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+        const galleryImages = document.querySelectorAll('.gallery img');
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
