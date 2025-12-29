@@ -18,6 +18,7 @@ body {
     background: #fdf8f3;
     color: #5c4a3d;
     line-height: 1.8;
+    font-size: 1.1rem;
 }
 
 h1, h2, h3, p, ul {
@@ -93,7 +94,7 @@ a:hover {
 }
 
 .tagline {
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: #9a8577;
     font-style: italic;
     margin-bottom: 2rem;
@@ -105,7 +106,7 @@ a:hover {
     background: linear-gradient(135deg, #d4a574 0%, #c17a74 100%);
     color: #fff;
     font-family: Georgia, serif;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     border-radius: 30px;
     box-shadow: 0 4px 15px rgba(193, 122, 116, 0.3);
     transition: all 0.3s ease;
@@ -127,7 +128,7 @@ a:hover {
 }
 
 .page-section h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #5c4a3d;
     text-align: center;
@@ -145,7 +146,7 @@ a:hover {
 
 .price-note {
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: #a8968a;
     font-style: italic;
     margin-bottom: 2.5rem;
@@ -162,7 +163,7 @@ a:hover {
 
 .commission-type h3 {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #5c4a3d;
     margin-bottom: 1rem;
@@ -280,7 +281,7 @@ a:hover {
 .tos-item summary {
     padding: 1rem 1.25rem;
     font-family: Georgia, serif;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     font-weight: 600;
     color: #5c4a3d;
     cursor: pointer;
@@ -312,13 +313,13 @@ a:hover {
 .tos-item p {
     padding: 0 1.25rem 1.25rem;
     color: #7a6a5c;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .tos-content {
     padding: 0 1.25rem 1.25rem;
     color: #7a6a5c;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .tos-content ul {
@@ -335,7 +336,7 @@ a:hover {
 }
 
 .tos-content h4 {
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #5c4a3d;
     margin: 1.25rem 0 0.5rem;
@@ -377,7 +378,7 @@ a:hover {
 }
 
 .contact-label {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: #a8968a;
@@ -388,7 +389,7 @@ a:hover {
     color: #5c4a3d;
     font-family: Georgia, serif;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
 }
 
 /* Footer */
@@ -400,12 +401,12 @@ footer {
 }
 
 footer p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: #a8968a;
 }
 
 .footer-note {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     color: #c4b5a8;
     margin-top: 0.4rem;
     font-style: italic;
