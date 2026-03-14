@@ -39,7 +39,7 @@
         </section>
 
         <section id="commissions-2d" class="page-section">
-            <div class="container"> 
+            <div class="container">
                 <h2>2D Commissions</h2>
 
                 <div class="commission-type">
@@ -88,21 +88,6 @@
                 </div>
             </div>
         </section>
-
-        <!---
-        <section id="commissions-3d" class="page-section page-section--alt">
-            <div class="container">
-                <h2>3D Avatars</h2>
-                <p class="section-intro"><strong>Starting at $1000+</strong><br>VRChat-ready with full visemes</p>
-
-                <div class="gallery gallery--large">
-                    <img src="img/3d-avatar-1.jpg" alt="3D avatar example">
-                    <img src="img/3d-avatar-2.jpg" alt="3D avatar example">
-                    <img src="img/3d-avatar-3.jpg" alt="3D avatar example">
-                </div>
-            </div>
-        </section>
-        -->
 
         <section id="tos" class="page-section">
             <div class="container">
@@ -220,41 +205,41 @@
 
     <footer>
         <div class="container">
-            <p>© 2025 Lycanworks</p>
+            <p>&copy; 2026 Lycanworks</p>
             <p class="footer-note">Do not use or repost without permission.</p>
         </div>
     </footer>
 
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
-        <span class="lightbox-close">✕</span>
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
         <img src="" alt="Full size image">
     </div>
 
     <script>
-        // Lightbox functionality
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = lightbox.querySelector('img');
-        const galleryImages = document.querySelectorAll('.gallery img');
 
-        galleryImages.forEach(img => {
+        document.querySelectorAll('.gallery img').forEach(img => {
             img.addEventListener('click', () => {
                 lightboxImg.src = img.src;
                 lightboxImg.alt = img.alt;
                 lightbox.classList.add('active');
+                document.body.classList.add('lightbox-open');
             });
         });
 
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.classList.remove('lightbox-open');
+        }
+
         lightbox.addEventListener('click', (e) => {
-            if (e.target !== lightboxImg) {
-                lightbox.classList.remove('active');
-            }
+            if (e.target !== lightboxImg) closeLightbox();
         });
 
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                lightbox.classList.remove('active');
-            }
+            if (e.key === 'Escape') closeLightbox();
         });
     </script>
 </body>
