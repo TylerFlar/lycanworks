@@ -1,0 +1,81 @@
+{
+  "commissions": [
+    {
+      "commissioner": "ExampleUser1",
+      "type": "full_body",
+      "status": "completed",
+      "startedAt": "2026-01-05",
+      "completedAt": "2026-01-14"
+    },
+    {
+      "commissioner": "ExampleUser2",
+      "type": "icon",
+      "status": "completed",
+      "startedAt": "2026-01-15",
+      "completedAt": "2026-01-17"
+    },
+    {
+      "commissioner": "ExampleUser3",
+      "type": "bust",
+      "status": "completed",
+      "startedAt": "2026-01-18",
+      "completedAt": "2026-01-24"
+    },
+    {
+      "commissioner": "ExampleUser4",
+      "type": "half_body",
+      "status": "completed",
+      "startedAt": "2026-01-25",
+      "completedAt": "2026-02-02"
+    },
+    {
+      "commissioner": "ExampleUser5",
+      "type": "full_body",
+      "status": "completed",
+      "startedAt": "2026-02-03",
+      "completedAt": "2026-02-13"
+    },
+    {
+      "commissioner": "ExampleUser6",
+      "type": "icon",
+      "status": "completed",
+      "startedAt": "2026-02-14",
+      "completedAt": "2026-02-15"
+    },
+    {
+      "commissioner": "ExampleUser7",
+      "type": "sticker",
+      "status": "completed",
+      "startedAt": "2026-02-16",
+      "completedAt": "2026-02-18"
+    },
+    {
+      "commissioner": "ExampleUser8",
+      "type": "reference_sheet",
+      "status": "completed",
+      "startedAt": "2026-02-19",
+      "completedAt": "2026-03-05"
+    },
+    {
+      "commissioner": "GreenHyena",
+      "type": "half_body",
+      "status": "in_progress",
+      "startedAt": "2026-03-10",
+      "completedAt": null
+    },
+    {
+      "commissioner": "CoralDeer",
+      "type": "bust",
+      "status": "queued",
+      "startedAt": null,
+      "completedAt": null
+    },
+    {
+      "commissioner": "BlueFox",
+      "type": "full_body",
+      "status": "queued",
+      "startedAt": null,
+      "completedAt": null
+    }
+  ]
+}

@@ -148,7 +148,7 @@ a:hover {
 .page-section h2 {
     font-size: 1.6rem;
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .page-section h2::after {
@@ -158,14 +158,6 @@ a:hover {
     font-size: 0.9rem;
     margin: 0.75rem auto 0;
     opacity: 0.7;
-}
-
-.price-note {
-    text-align: center;
-    font-size: 1rem;
-    color: var(--color-text-light);
-    font-style: italic;
-    margin-bottom: 2.5rem;
 }
 
 /* Commission Types */
@@ -188,6 +180,13 @@ a:hover {
     color: var(--color-accent-rose);
 }
 
+.tier-note {
+    text-align: center;
+    font-style: italic;
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+}
+
 .coming-soon {
     text-align: center;
     font-style: italic;
@@ -196,6 +195,62 @@ a:hover {
     background: #f5ebe0;
     border-radius: 10px;
     border: 2px dashed #d4c4b5;
+}
+
+/* Add-ons */
+.addons-heading {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--color-border);
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    justify-items: center;
+}
+
+.addon-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 0.5rem);
+}
+
+.addon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.25rem 1.5rem;
+    background: var(--color-bg-card);
+    border: 2px solid var(--color-border);
+    border-radius: 12px;
+    transition: all var(--transition);
+    width: 100%;
+}
+
+.addon-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-accent);
+    box-shadow: 0 6px 20px rgba(139, 90, 70, 0.1);
+}
+
+.addon-name {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    margin-bottom: 0.4rem;
+}
+
+.addon-price {
+    font-weight: 600;
+    color: var(--color-accent-rose);
+    font-size: 1.05rem;
 }
 
 /* Gallery */
@@ -434,6 +489,16 @@ footer p {
 
     .gallery img {
         max-width: 150px;
+    }
+
+    .addons-grid {
+        grid-template-columns: 1fr;
+        max-width: 260px;
+    }
+
+    .addon-card:last-child:nth-child(odd) {
+        grid-column: auto;
+        max-width: none;
     }
 
     .contact-grid {
