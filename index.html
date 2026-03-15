@@ -120,6 +120,7 @@
         <section id="queue" class="page-section page-section--alt">
             <div class="container">
                 <h2>Commission Queue</h2>
+                <div id="queue-status"></div>
                 <div id="queue-content">
                     <div class="loading">Loading queue&hellip;</div>
                 </div>
@@ -127,6 +128,7 @@
                     <h3 class="completed-heading">Recently Completed</h3>
                     <div class="completed-list" id="completed-list"></div>
                 </div>
+                <div id="queue-updated"></div>
             </div>
         </section>
 
@@ -334,6 +336,24 @@
                 `).join('') + '</div>';
             }
 
+            // Commission status banner
+            const statusEl = document.getElementById('queue-status');
+            const queuedOnly = estimates.filter(e => e.status === 'queued');
+            const lastQueued = queuedOnly.length > 0 ? queuedOnly[queuedOnly.length - 1] : null;
+            const waitDays = lastQueued && lastQueued.canEstimate ? lastQueued.estDays : 0;
+
+            if (active.length === 0) {
+                statusEl.innerHTML = '<div class="comm-status comm-status--open">Commissions are open!</div>';
+            } else if (!hasData) {
+                statusEl.innerHTML = '';
+            } else if (waitDays > 60) {
+                statusEl.innerHTML = '<div class="comm-status comm-status--closed">Commissions are currently closed<span class="comm-status-detail">Estimated wait exceeds 60 days</span></div>';
+            } else if (waitDays > 30) {
+                statusEl.innerHTML = '<div class="comm-status comm-status--limited">Limited availability<span class="comm-status-detail">~' + waitDays + ' day wait for new commissions</span></div>';
+            } else {
+                statusEl.innerHTML = '<div class="comm-status comm-status--open">Commissions are open<span class="comm-status-detail">~' + waitDays + ' day wait</span></div>';
+            }
+
             // Recently completed (last 3)
             const recent = completed.slice(-3).reverse();
             if (recent.length > 0) {
@@ -344,6 +364,12 @@
                         <span class="completed-date">${formatDate(c.completedAt)}</span>
                     </div>
                 `).join('');
+            }
+
+            // Last updated
+            if (data.lastUpdated) {
+                document.getElementById('queue-updated').innerHTML =
+                    '<div class="queue-updated">Queue updated ' + formatDate(data.lastUpdated) + '</div>';
             }
         }
 

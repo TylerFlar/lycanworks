@@ -247,6 +247,43 @@ summary:focus-visible {
     font-style: italic;
 }
 
+/* Commission status banner */
+.comm-status {
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    max-width: 550px;
+    margin: 0 auto 1.5rem;
+}
+
+.comm-status--open {
+    background: rgba(100, 160, 100, 0.1);
+    border: 2px solid rgba(100, 160, 100, 0.25);
+    color: #5a8a5a;
+}
+
+.comm-status--limited {
+    background: rgba(212, 165, 116, 0.1);
+    border: 2px solid rgba(212, 165, 116, 0.3);
+    color: var(--color-accent);
+}
+
+.comm-status--closed {
+    background: rgba(193, 122, 116, 0.1);
+    border: 2px solid rgba(193, 122, 116, 0.25);
+    color: var(--color-accent-rose);
+}
+
+.comm-status-detail {
+    display: block;
+    font-weight: 400;
+    font-size: 0.85rem;
+    margin-top: 0.15rem;
+    opacity: 0.8;
+}
+
 /* Queue */
 .queue-list {
     display: flex;
@@ -421,6 +458,14 @@ summary:focus-visible {
 .completed-date {
     color: var(--color-text-light);
     flex-shrink: 0;
+}
+
+.queue-updated {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    margin-top: 1.5rem;
+    font-style: italic;
 }
 
 /* TOS */
