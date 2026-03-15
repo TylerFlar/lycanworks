@@ -32,86 +32,100 @@
             <div class="container">
                 <img src="img/logo.png" alt="Lycanworks logo" class="logo">
                 <h1>Lycanworks</h1>
-                <p class="tagline">2D Art & 3D Avatar Commissions</p>
                 <a href="#contact" class="primary-button">Get in Touch</a>
             </div>
             <div class="hero-decoration"></div>
         </section>
 
-        <section id="commissions-2d" class="page-section">
+        <section id="pricing" class="page-section">
             <div class="container">
-                <h2>2D Commissions</h2>
+                <h2>Pricing</h2>
 
-                <div class="commission-type">
-                    <h3>Icon / Headshot <span class="price">$65</span></h3>
-                    <div class="gallery">
-                        <img src="img/2d-icon-1.jpg" alt="Icon headshot example">
-                        <img src="img/2d-icon-2.jpg" alt="Icon headshot example">
-                    </div>
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Sketch</th>
+                            <th>Flat Color</th>
+                            <th>Full Render</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Headshot</td>
+                            <td>$35</td>
+                            <td>$65</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>Half Body</td>
+                            <td>$70</td>
+                            <td>$120</td>
+                            <td>$200</td>
+                        </tr>
+                        <tr>
+                            <td>Full Body</td>
+                            <td>$110</td>
+                            <td>$190</td>
+                            <td>$300</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="pricing-table pricing-table--compact">
+                    <thead>
+                        <tr><th colspan="2">Specialty</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sticker / Emote</td>
+                            <td>$60</td>
+                        </tr>
+                        <tr>
+                            <td>Reference Sheet</td>
+                            <td>$400+</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr><th colspan="2">Add-ons</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Additional character</td>
+                            <td>+70% of base</td>
+                        </tr>
+                        <tr>
+                            <td>Scenic / detailed background</td>
+                            <td>+$50</td>
+                        </tr>
+                        <tr>
+                            <td>Complex design</td>
+                            <td>+$30</td>
+                        </tr>
+                        <tr>
+                            <td>Animation (looping)</td>
+                            <td>+50% of base</td>
+                        </tr>
+                        <tr>
+                            <td>NSFW</td>
+                            <td>+30% of base</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="portfolio-link">See examples on <a href="https://instagram.com/lycanworks_art">Instagram</a></p>
+            </div>
+        </section>
+
+        <section id="queue" class="page-section page-section--alt">
+            <div class="container">
+                <h2>Commission Queue</h2>
+                <div id="queue-content">
+                    <div class="loading">Loading queue&hellip;</div>
                 </div>
-
-                <div class="commission-type">
-                    <h3>Sticker / Emote <span class="price">$55</span></h3>
-                    <p class="tier-note">Examples coming soon!</p>
-                </div>
-
-                <div class="commission-type">
-                    <h3>Bust <span class="price">$120</span></h3>
-                    <div class="gallery">
-                        <img src="img/2d-portrait-1.jpg" alt="Bust example">
-                    </div>
-                </div>
-
-                <div class="commission-type">
-                    <h3>Half Body <span class="price">$170</span></h3>
-                    <div class="gallery">
-                        <img src="img/2d-half-body-1.jpg" alt="Half body example">
-                        <img src="img/2d-half-body-2.jpg" alt="Half body example">
-                        <img src="img/2d-half-body-3.jpg" alt="Half body example">
-                        <img src="img/2d-half-body-4.jpg" alt="Half body example">
-                    </div>
-                </div>
-
-                <div class="commission-type">
-                    <h3>Full Body <span class="price">$230</span></h3>
-                    <div class="gallery">
-                        <img src="img/2d-full-body-1.jpg" alt="Full body example">
-                    </div>
-                </div>
-
-                <div class="commission-type">
-                    <h3>Reference Sheet <span class="price">$350+</span></h3>
-                    <div class="gallery">
-                        <img src="img/2d-refsheet-1.jpg" alt="Reference sheet example">
-                    </div>
-                </div>
-
-                <h3 class="addons-heading">Add-ons</h3>
-                <div class="addons-grid">
-                    <div class="addon-card">
-                        <span class="addon-name">Scenic / detailed background</span>
-                        <span class="addon-price">+$40</span>
-                    </div>
-                    <div class="addon-card">
-                        <span class="addon-name">Additional character</span>
-                        <span class="addon-price">+60% of base tier</span>
-                    </div>
-                    <div class="addon-card">
-                        <span class="addon-name">Complex design (armor, props, etc.)</span>
-                        <span class="addon-price">+$25</span>
-                    </div>
-                    <div class="addon-card">
-                        <span class="addon-name">Banner / header format</span>
-                        <span class="addon-price">+$35</span>
-                    </div>
-                    <div class="addon-card">
-                        <span class="addon-name">Animation (looping, for wallpapers/PFPs)</span>
-                        <span class="addon-price">+50% of base price</span>
-                    </div>
-                </div>
-
-                <div class="commission-type">
-                    <p class="coming-soon">3D Avatars coming soon!</p>
+                <div id="completed-section" hidden>
+                    <h3 class="completed-heading">Recently Completed</h3>
+                    <div class="completed-list" id="completed-list"></div>
                 </div>
             </div>
         </section>
@@ -124,33 +138,33 @@
                     <details class="tos-item">
                         <summary>Will & Won't Create</summary>
                         <div class="tos-content">
-                            <h4>I Will Create</h4>
+                            <h4>Will Create</h4>
                             <ul>
-                                <li>Original characters (OCs)</li>
-                                <li>Fanart</li>
-                                <li>Anthro / Furry</li>
-                                <li>Feral characters</li>
+                                <li>Original characters (OCs) and fanart</li>
+                                <li>Anthro, furry, and feral characters</li>
                                 <li>Mild gore / blood</li>
-                                <li>Couples / multiple characters (additional charges apply)</li>
-                                <li>NSFW (at my discretion, additional charges apply)</li>
+                                <li>Multiple characters (additional charges apply)</li>
+                                <li>NSFW at my discretion (additional charges apply)</li>
                             </ul>
-                            <h4>I Won't Create</h4>
+                            <h4>Won't Create</h4>
                             <ul>
-                                <li>Hateful or discriminatory content</li>
-                                <li>Real people without their consent</li>
-                                <li>Anything illegal</li>
+                                <li>Hateful, discriminatory, or illegal content</li>
+                                <li>NSFW involving minors in any context</li>
+                                <li>Real people without their explicit consent</li>
                                 <li>Complex mechanical designs (mecha, vehicles, etc.)</li>
                             </ul>
-                            <p><em>If unsure, just ask!</em></p>
+                            <p><em>If unsure about your idea, just ask — I don't bite.</em></p>
                         </div>
                     </details>
 
                     <details class="tos-item">
-                        <summary>Payment</summary>
+                        <summary>Payment & Pricing</summary>
                         <div class="tos-content">
                             <ul>
-                                <li>Work on the commission will only begin when full payment is received in $USD. For commissions exceeding $500, a 50% before/50% after agreement may be made at my discretion—this must be mutually agreed upon before payment.</li>
-                                <li>Tips are appreciated but do not alter the service provided nor my obligation to you.</li>
+                                <li>Full payment in USD before work begins. For commissions over $500, a 50/50 split may be arranged at my discretion.</li>
+                                <li>Your quoted price is locked in at time of agreement, regardless of future price changes on the site.</li>
+                                <li>Scope changes after payment (adding characters, complexity, etc.) may incur additional charges — these will be discussed before proceeding.</li>
+                                <li>Tips are appreciated but do not alter the scope of service.</li>
                             </ul>
                         </div>
                     </details>
@@ -159,37 +173,38 @@
                         <summary>Process & Delivery</summary>
                         <div class="tos-content">
                             <ul>
-                                <li>Work-in-progress (WIP) images will be sent at various stages. You may request reasonable changes—what's 'reasonable' depends on the commission scope and work completed. Major changes may incur additional charges at my discretion.</li>
-                                <li>After sending a WIP, I am not obligated to wait for a response before continuing.</li>
-                                <li>An approximate delivery time will be provided, but this is not a binding deadline. You'll be notified of significant delays. Delays will not exceed 60 days—if exceeded, you're entitled to a full refund.</li>
-                                <li>Upon completion you'll receive: full resolution PNG, a web-friendly copy (under 10MB), and a square headshot for profile use. No physical product, but you may print for personal use.</li>
+                                <li>Provide clear references — the more detail, the better the result.</li>
+                                <li>WIPs shared at key stages. <strong>2 revision rounds</strong> per WIP included; major changes (new pose, redesign) may cost extra.</li>
+                                <li>If I don't hear back within 48 hours of a WIP, I may continue working.</li>
+                                <li>Delivery time is approximate. Delays over 60 days entitle you to a full refund.</li>
+                                <li>You'll receive: full-res PNG, web-friendly copy, and a square headshot crop.</li>
+                                <li>Post-delivery edits are charged unless trivial (under 5 min).</li>
                             </ul>
-                            <h4>Alterations</h4>
+                            <h4>Communication</h4>
                             <ul>
-                                <li>I will execute the commission to the best of my ability. If you provide references, I may make minor artistic alterations to improve quality. Major design changes will be discussed first.</li>
-                                <li>Edit requests after final delivery will likely be charged unless trivial (under 5 minutes).</li>
-                                <li>I am under no obligation to provide further alterations or service after the final product is delivered.</li>
+                                <li>I respond within a few days. Please keep discussion in one thread/DM.</li>
+                                <li>If you go unresponsive for <strong>30 days</strong>, I may cancel the commission. Refund depends on work completed.</li>
                             </ul>
                         </div>
                     </details>
 
                     <details class="tos-item">
-                        <summary>Copyright & Usage</summary>
+                        <summary>Copyright, Usage & AI</summary>
                         <div class="tos-content">
-                            <h4>The Artist (Tyler Flar)</h4>
+                            <h4>The Artist (Me)</h4>
                             <ul>
-                                <li>Retains all copyright over the commissioned artwork</li>
-                                <li>Does not claim ownership of your intellectual property (IP)</li>
-                                <li>Will not profit further from the artwork or your IP</li>
-                                <li>Reserves the right to post artwork online for marketing and gallery display</li>
+                                <li>I retain copyright over the artwork but don't claim your characters or IP</li>
+                                <li>I may post the artwork for portfolio/marketing purposes</li>
                             </ul>
-                            <h4>The Customer (You)</h4>
                             <ul>
-                                <li>May upload and display the artwork online in any capacity</li>
-                                <li>May <strong>not</strong> profit from the artwork unless commercial use is agreed upon</li>
-                                <li>Retain the rights to your IP</li>
-                                <li>May <strong>not</strong> alter the artwork except cropping (signature/credit must remain visible)</li>
-                                <li>May <strong>not</strong> claim the artwork as your own creation</li>
+                                <li>You may share, display, and print the artwork for personal use</li>
+                                <li>You may <strong>not</strong> profit from, alter, or claim the artwork as your own</li>
+                                <li>My signature/credit must remain visible (cropping is fine)</li>
+                            </ul>
+                            <h4>AI</h4>
+                            <ul>
+                                <li>My artwork may <strong>not</strong> be used for AI training, LORAs, or similar models</li>
+                                <li>AI-generated references are fine for communicating ideas — the final piece is 100% hand-drawn</li>
                             </ul>
                         </div>
                     </details>
@@ -198,10 +213,10 @@
                         <summary>Cancellations & Refunds</summary>
                         <div class="tos-content">
                             <ul>
-                                <li>Refunds are available only at my discretion and may be refused for any reason.</li>
+                                <li>You may cancel before work begins for a full refund.</li>
+                                <li>Once work has started, refunds are at my discretion and may be partial based on work completed.</li>
                                 <li>If I am unable to complete your commission, you will receive a full refund.</li>
-                                <li>Refunds will be paid directly—do not use PayPal chargeback.</li>
-                                <li>If you request a PayPal chargeback, I will assume full rights to the art and IP and may profit from both with no credit to you. The chargeback will be disputed.</li>
+                                <li>Refunds will be issued directly — do <strong>not</strong> file a PayPal chargeback. Filing a chargeback forfeits all your rights to the artwork and IP, and the dispute will be contested.</li>
                             </ul>
                         </div>
                     </details>
@@ -233,41 +248,112 @@
     <footer>
         <div class="container">
             <p>&copy; <script>document.write(new Date().getFullYear())</script> Lycanworks</p>
-            <p class="footer-note">Do not use or repost without permission.</p>
         </div>
     </footer>
 
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
-        <img src="" alt="Full size image">
-    </div>
-
     <script>
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = lightbox.querySelector('img');
+        const PLATFORM_LABELS = { discord: 'Discord', instagram: 'Instagram', email: 'Email' };
+        const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
-        document.querySelectorAll('.gallery img').forEach(img => {
-            img.addEventListener('click', () => {
-                lightboxImg.src = img.src;
-                lightboxImg.alt = img.alt;
-                lightbox.classList.add('active');
-                document.body.classList.add('lightbox-open');
-            });
-        });
+        function daysBetween(a, b) { return Math.round((new Date(b) - new Date(a)) / 86400000); }
+        function formatDate(date) { const d = new Date(date); return MONTHS[d.getMonth()] + ' ' + d.getDate(); }
+        function addDays(date, days) { const d = new Date(date); d.setDate(d.getDate() + Math.round(days)); return d; }
 
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            document.body.classList.remove('lightbox-open');
+        function computeAvgDays(completed) {
+            if (completed.length === 0) return 7;
+            const total = completed.reduce((sum, c) => sum + daysBetween(c.startedAt, c.completedAt), 0);
+            return total / completed.length;
         }
 
-        lightbox.addEventListener('click', (e) => {
-            if (e.target !== lightboxImg) closeLightbox();
-        });
+        function computeThroughput(completed) {
+            const now = new Date();
+            const recent = completed.filter(c => new Date(c.completedAt) >= addDays(now, -90));
+            if (recent.length < 2) return 1;
 
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeLightbox();
-        });
+            const workDays = recent.reduce((sum, c) => sum + daysBetween(c.startedAt, c.completedAt), 0);
+            const dates = recent.flatMap(c => [new Date(c.startedAt), new Date(c.completedAt)]);
+            const span = Math.max(daysBetween(new Date(Math.min(...dates)), new Date(Math.max(...dates))), 1);
+            const util = Math.min(workDays / span, 1);
+            return util > 0 ? util : 1;
+        }
+
+        function renderQueue(data) {
+            const completed = data.commissions.filter(c => c.status === 'completed');
+            const active = data.commissions.filter(c => c.status === 'in_progress' || c.status === 'queued' || c.status === 'on_hold');
+
+            const avgDays = computeAvgDays(completed);
+            const throughput = computeThroughput(completed);
+            const hasData = completed.length >= 2;
+
+            const today = new Date();
+            let cursor = new Date(today);
+            const estimates = [];
+
+            for (const item of active) {
+                if (item.status === 'on_hold') {
+                    estimates.push({ ...item, estDate: null, estDays: null, canEstimate: false });
+                } else if (item.status === 'in_progress') {
+                    const remaining = Math.max(avgDays - daysBetween(item.startedAt, today), 1);
+                    const cal = hasData ? remaining / throughput : remaining;
+                    cursor = addDays(today, cal);
+                    estimates.push({ ...item, estDate: cursor, estDays: Math.round(cal), canEstimate: hasData });
+                } else {
+                    const cal = hasData ? avgDays / throughput : avgDays;
+                    const estDate = addDays(cursor, cal);
+                    estimates.push({ ...item, estDate, estDays: Math.round(daysBetween(today, estDate)), canEstimate: hasData });
+                    cursor = estDate;
+                }
+            }
+
+            const el = document.getElementById('queue-content');
+
+            if (active.length === 0) {
+                el.innerHTML = '<div class="queue-empty">Queue is empty &mdash; commissions are open!</div>';
+            } else {
+                el.innerHTML = '<div class="queue-list">' + estimates.map((item, i) => `
+                    <div class="queue-card${item.status === 'in_progress' ? ' queue-card--active' : ''}${item.status === 'on_hold' ? ' queue-card--hold' : ''}">
+                        <div class="queue-position">${i + 1}</div>
+                        <div class="queue-details">
+                            <div class="queue-name">
+                                ${item.commissioner}
+                                <span class="status-badge status-badge--${item.status === 'in_progress' ? 'in-progress' : item.status === 'on_hold' ? 'on-hold' : 'queued'}">
+                                    ${item.status === 'in_progress' ? 'In Progress' : item.status === 'on_hold' ? 'On Hold' : 'Queued'}
+                                </span>
+                            </div>
+                            ${item.platform ? '<div class="queue-platform">' + (PLATFORM_LABELS[item.platform] || item.platform) + '</div>' : ''}
+                        </div>
+                        <div class="queue-meta">
+                            ${item.status === 'on_hold'
+                                ? '<div class="queue-days">Waiting on client</div>'
+                                : item.canEstimate
+                                    ? `<div class="queue-estimate">~${formatDate(item.estDate)}</div>
+                                       <div class="queue-days">~${item.estDays} day${item.estDays !== 1 ? 's' : ''}</div>`
+                                    : '<div class="queue-days">Estimate pending</div>'}
+                        </div>
+                    </div>
+                `).join('') + '</div>';
+            }
+
+            // Recently completed (last 3)
+            const recent = completed.slice(-3).reverse();
+            if (recent.length > 0) {
+                document.getElementById('completed-section').hidden = false;
+                document.getElementById('completed-list').innerHTML = recent.map(c => `
+                    <div class="completed-item">
+                        <span class="completed-name">${c.commissioner}</span>
+                        <span class="completed-date">${formatDate(c.completedAt)}</span>
+                    </div>
+                `).join('');
+            }
+        }
+
+        fetch('queue.json')
+            .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+            .then(renderQueue)
+            .catch(() => {
+                document.getElementById('queue-content').innerHTML =
+                    '<div class="queue-error">Unable to load queue data.</div>';
+            });
     </script>
 </body>
 </html>
