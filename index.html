@@ -267,24 +267,11 @@
             return total / completed.length;
         }
 
-        function computeThroughput(completed) {
-            const now = new Date();
-            const recent = completed.filter(c => new Date(c.completedAt) >= addDays(now, -90));
-            if (recent.length < 2) return 1;
-
-            const workDays = recent.reduce((sum, c) => sum + daysBetween(c.startedAt, c.completedAt), 0);
-            const dates = recent.flatMap(c => [new Date(c.startedAt), new Date(c.completedAt)]);
-            const span = Math.max(daysBetween(new Date(Math.min(...dates)), new Date(Math.max(...dates))), 1);
-            const util = Math.min(workDays / span, 1);
-            return util > 0 ? util : 1;
-        }
-
         function renderQueue(data) {
             const completed = data.commissions.filter(c => c.status === 'completed');
             const active = data.commissions.filter(c => c.status === 'in_progress' || c.status === 'queued' || c.status === 'on_hold');
 
             const avgDays = computeAvgDays(completed);
-            const throughput = computeThroughput(completed);
             const hasData = completed.length >= 2;
 
             const today = new Date();
@@ -296,12 +283,10 @@
                     estimates.push({ ...item, estDate: null, estDays: null, canEstimate: false });
                 } else if (item.status === 'in_progress') {
                     const remaining = Math.max(avgDays - daysBetween(item.startedAt, today), 1);
-                    const cal = hasData ? remaining / throughput : remaining;
-                    cursor = addDays(today, cal);
-                    estimates.push({ ...item, estDate: cursor, estDays: Math.round(cal), canEstimate: hasData });
+                    cursor = addDays(today, remaining);
+                    estimates.push({ ...item, estDate: cursor, estDays: Math.round(remaining), canEstimate: hasData });
                 } else {
-                    const cal = hasData ? avgDays / throughput : avgDays;
-                    const estDate = addDays(cursor, cal);
+                    const estDate = addDays(cursor, avgDays);
                     estimates.push({ ...item, estDate, estDays: Math.round(daysBetween(today, estDate)), canEstimate: hasData });
                     cursor = estDate;
                 }

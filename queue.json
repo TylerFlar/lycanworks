@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14",
+  "lastUpdated": "2026-03-21",
   "commissions": [
     {
       "commissioner": "DogYeenus",
@@ -39,22 +39,22 @@
     {
       "commissioner": "StinkySnep",
       "platform": "discord",
-      "status": "in_progress",
+      "status": "completed",
       "startedAt": "2026-03-09",
-      "completedAt": null
+      "completedAt": "2026-03-21"
     },
     {
       "commissioner": "mio_the_wusky02",
       "platform": "instagram",
       "status": "on_hold",
-      "startedAt": "2026-03-09",
+      "startedAt": null,
       "completedAt": null
     },
     {
       "commissioner": "Carlos S.",
       "platform": "instagram",
-      "status": "queued",
-      "startedAt": null,
+      "status": "in_progress",
+      "startedAt": "2026-03-21",
       "completedAt": null
     },
     {
