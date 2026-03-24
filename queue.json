@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-23",
+  "lastUpdated": "2026-03-24",
   "commissions": [
     {
       "commissioner": "DogYeenus",
@@ -59,16 +59,16 @@
     },
     {
       "commissioner": "WubiWusky",
-      "platform": "telegram",
-      "status": "in_progress",
+      "platform": "discord",
+      "status": "completed",
       "startedAt": "2026-03-23",
-      "completedAt": null
+      "completedAt": "2026-03-24"
     },
     {
       "commissioner": "Baxturr",
       "platform": "instagram",
-      "status": "queued",
-      "startedAt": null,
+      "status": "in_progress",
+      "startedAt": "2026-03-24",
       "completedAt": null
     },
     {
