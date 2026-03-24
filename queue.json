@@ -53,15 +53,15 @@
     {
       "commissioner": "Carlos S.",
       "platform": "instagram",
-      "status": "in_progress",
+      "status": "completed",
       "startedAt": "2026-03-21",
-      "completedAt": null
+      "completedAt": "2026-03-23"
     },
     {
       "commissioner": "WubiWusky",
-      "platform": "instagram",
-      "status": "queued",
-      "startedAt": null,
+      "platform": "telegram",
+      "status": "in_progress",
+      "startedAt": "2026-03-23",
       "completedAt": null
     },
     {
