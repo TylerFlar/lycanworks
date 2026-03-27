@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26",
+  "lastUpdated": "2026-03-27",
   "commissions": [
     {
       "commissioner": "DogYeenus",
@@ -74,15 +74,15 @@
     {
       "commissioner": "Kai N",
       "platform": "instagram",
-      "status": "in_progress",
+      "status": "completed",
       "startedAt": "2026-03-26",
-      "completedAt": null
+      "completedAt": "2026-03-27"
     },
     {
       "commissioner": "Thatmine",
       "platform": "instagram",
-      "status": "queued",
-      "startedAt": null,
+      "status": "in-progress",
+      "startedAt": "2026-03-27",
       "completedAt": null
     },
     {
