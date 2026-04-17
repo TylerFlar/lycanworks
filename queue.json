@@ -61,6 +61,7 @@
       "type": null,
       "paid": null,
       "status": "on_hold",
+      "note": "on_hold pending new ref sheet, follow-up sent",
       "startedAt": null,
       "completedAt": null
     },
