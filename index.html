@@ -327,7 +327,12 @@
             const lastQueued = queuedOnly.length > 0 ? queuedOnly[queuedOnly.length - 1] : null;
             const waitDays = lastQueued && lastQueued.canEstimate ? lastQueued.estDays : 0;
 
-            if (active.length === 0) {
+            const override = data.statusOverride;
+            if (override && override.state) {
+                const stateClass = override.state === 'open' ? 'open' : override.state === 'limited' ? 'limited' : 'closed';
+                const detail = override.detail ? '<span class="comm-status-detail">' + override.detail + '</span>' : '';
+                statusEl.innerHTML = '<div class="comm-status comm-status--' + stateClass + '">' + (override.message || '') + detail + '</div>';
+            } else if (active.length === 0) {
                 statusEl.innerHTML = '<div class="comm-status comm-status--open">Commissions are open!</div>';
             } else if (!hasData) {
                 statusEl.innerHTML = '';

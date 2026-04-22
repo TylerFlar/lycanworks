@@ -1,5 +1,9 @@
 {
-  "lastUpdated": "2026-04-16",
+  "lastUpdated": "2026-04-21",
+  "statusOverride": {
+    "state": "closed",
+    "message": "Commissions closed until further notice"
+  },
   "commissions": [
     {
       "commissioner": "DogYeenus",
@@ -144,15 +148,15 @@
       "paid": null,
       "status": "in_progress",
       "startedAt": "2026-04-16",
-      "completedAt": null
+      "completedAt": "2026-04-21"
     },
     {
       "commissioner": "C.T. Husky",
       "platform": "discord",
       "type": null,
       "paid": null,
-      "status": "queued",
-      "startedAt": null,
+      "status": "in_progress",
+      "startedAt": "2026-04-21",
       "completedAt": null
     },
     {
