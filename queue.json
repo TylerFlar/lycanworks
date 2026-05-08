@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21",
+  "lastUpdated": "2026-05-07",
   "statusOverride": {
     "state": "closed",
     "message": "Commissions closed until further notice"
@@ -155,17 +155,17 @@
       "platform": "discord",
       "type": null,
       "paid": null,
-      "status": "in_progress",
+      "status": "completed",
       "startedAt": "2026-04-21",
-      "completedAt": null
+      "completedAt": "2026-05-07"
     },
     {
       "commissioner": "Emil",
       "platform": "instagram",
       "type": "addon[NSFW]",
       "paid": 30,
-      "status": "queued",
-      "startedAt": null,
+      "status": "in_progress",
+      "startedAt": "2026-05-07",
       "completedAt": null
     }
   ]
