@@ -164,9 +164,9 @@
       "platform": "instagram",
       "type": "addon[NSFW]",
       "paid": 30,
-      "status": "in_progress",
+      "status": "completed",
       "startedAt": "2026-05-07",
-      "completedAt": null
+      "completedAt": "2026-05-07"
     }
   ]
 }
